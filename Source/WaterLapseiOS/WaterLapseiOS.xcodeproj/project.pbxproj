@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A959E311722FA5B000B78A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A959E301722FA5B000B78A6 /* UIKit.framework */; };
+		3A959E331722FA5B000B78A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A959E321722FA5B000B78A6 /* Foundation.framework */; };
+		3A959E351722FA5B000B78A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A959E341722FA5B000B78A6 /* CoreGraphics.framework */; };
+		3A959E3B1722FA5B000B78A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A959E391722FA5B000B78A6 /* InfoPlist.strings */; };
+		3A959E3D1722FA5B000B78A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A959E3C1722FA5B000B78A6 /* main.m */; };
+		3A959E411722FA5B000B78A6 /* WLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A959E401722FA5B000B78A6 /* WLAppDelegate.m */; };
+		3A959E431722FA5B000B78A6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A959E421722FA5B000B78A6 /* Default.png */; };
+		3A959E451722FA5B000B78A6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A959E441722FA5B000B78A6 /* Default@2x.png */; };
+		3A959E471722FA5B000B78A6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A959E461722FA5B000B78A6 /* Default-568h@2x.png */; };
+		3A959E4A1722FA5B000B78A6 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A959E481722FA5B000B78A6 /* MainStoryboard_iPhone.storyboard */; };
+		3A959E4D1722FA5B000B78A6 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A959E4B1722FA5B000B78A6 /* MainStoryboard_iPad.storyboard */; };
+		3A959E501722FA5B000B78A6 /* WLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A959E4F1722FA5B000B78A6 /* WLFirstViewController.m */; };
+		3A959E521722FA5B000B78A6 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A959E511722FA5B000B78A6 /* first.png */; };
+		3A959E541722FA5B000B78A6 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A959E531722FA5B000B78A6 /* first@2x.png */; };
+		3A959E571722FA5B000B78A6 /* WLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A959E561722FA5B000B78A6 /* WLSecondViewController.m */; };
+		3A959E591722FA5B000B78A6 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A959E581722FA5B000B78A6 /* second.png */; };
+		3A959E5B1722FA5B000B78A6 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A959E5A1722FA5B000B78A6 /* second@2x.png */; };
+		3A959E631722FA5B000B78A6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A959E621722FA5B000B78A6 /* SenTestingKit.framework */; };
+		3A959E641722FA5B000B78A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A959E301722FA5B000B78A6 /* UIKit.framework */; };
+		3A959E651722FA5B000B78A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A959E321722FA5B000B78A6 /* Foundation.framework */; };
+		3A959E6D1722FA5B000B78A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A959E6B1722FA5B000B78A6 /* InfoPlist.strings */; };
+		3A959E701722FA5B000B78A6 /* WaterLapseiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A959E6F1722FA5B000B78A6 /* WaterLapseiOSTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A959E661722FA5B000B78A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A959E251722FA5B000B78A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A959E2C1722FA5B000B78A6;
+			remoteInfo = WaterLapseiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A959E2D1722FA5B000B78A6 /* WaterLapseiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterLapseiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A959E301722FA5B000B78A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3A959E321722FA5B000B78A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3A959E341722FA5B000B78A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3A959E381722FA5B000B78A6 /* WaterLapseiOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WaterLapseiOS-Info.plist"; sourceTree = "<group>"; };
+		3A959E3A1722FA5B000B78A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A959E3C1722FA5B000B78A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A959E3E1722FA5B000B78A6 /* WaterLapseiOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WaterLapseiOS-Prefix.pch"; sourceTree = "<group>"; };
+		3A959E3F1722FA5B000B78A6 /* WLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLAppDelegate.h; sourceTree = "<group>"; };
+		3A959E401722FA5B000B78A6 /* WLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLAppDelegate.m; sourceTree = "<group>"; };
+		3A959E421722FA5B000B78A6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3A959E441722FA5B000B78A6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3A959E461722FA5B000B78A6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3A959E491722FA5B000B78A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		3A959E4C1722FA5B000B78A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		3A959E4E1722FA5B000B78A6 /* WLFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLFirstViewController.h; sourceTree = "<group>"; };
+		3A959E4F1722FA5B000B78A6 /* WLFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLFirstViewController.m; sourceTree = "<group>"; };
+		3A959E511722FA5B000B78A6 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		3A959E531722FA5B000B78A6 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		3A959E551722FA5B000B78A6 /* WLSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLSecondViewController.h; sourceTree = "<group>"; };
+		3A959E561722FA5B000B78A6 /* WLSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLSecondViewController.m; sourceTree = "<group>"; };
+		3A959E581722FA5B000B78A6 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		3A959E5A1722FA5B000B78A6 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		3A959E611722FA5B000B78A6 /* WaterLapseiOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterLapseiOSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A959E621722FA5B000B78A6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3A959E6A1722FA5B000B78A6 /* WaterLapseiOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WaterLapseiOSTests-Info.plist"; sourceTree = "<group>"; };
+		3A959E6C1722FA5B000B78A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A959E6E1722FA5B000B78A6 /* WaterLapseiOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterLapseiOSTests.h; sourceTree = "<group>"; };
+		3A959E6F1722FA5B000B78A6 /* WaterLapseiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterLapseiOSTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A959E2A1722FA5B000B78A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A959E311722FA5B000B78A6 /* UIKit.framework in Frameworks */,
+				3A959E331722FA5B000B78A6 /* Foundation.framework in Frameworks */,
+				3A959E351722FA5B000B78A6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A959E5D1722FA5B000B78A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A959E631722FA5B000B78A6 /* SenTestingKit.framework in Frameworks */,
+				3A959E641722FA5B000B78A6 /* UIKit.framework in Frameworks */,
+				3A959E651722FA5B000B78A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A959E241722FA5B000B78A6 = {
+			isa = PBXGroup;
+			children = (
+				3A959E361722FA5B000B78A6 /* WaterLapseiOS */,
+				3A959E681722FA5B000B78A6 /* WaterLapseiOSTests */,
+				3A959E2F1722FA5B000B78A6 /* Frameworks */,
+				3A959E2E1722FA5B000B78A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A959E2E1722FA5B000B78A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A959E2D1722FA5B000B78A6 /* WaterLapseiOS.app */,
+				3A959E611722FA5B000B78A6 /* WaterLapseiOSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A959E2F1722FA5B000B78A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A959E301722FA5B000B78A6 /* UIKit.framework */,
+				3A959E321722FA5B000B78A6 /* Foundation.framework */,
+				3A959E341722FA5B000B78A6 /* CoreGraphics.framework */,
+				3A959E621722FA5B000B78A6 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A959E361722FA5B000B78A6 /* WaterLapseiOS */ = {
+			isa = PBXGroup;
+			children = (
+				3A959E3F1722FA5B000B78A6 /* WLAppDelegate.h */,
+				3A959E401722FA5B000B78A6 /* WLAppDelegate.m */,
+				3A959E481722FA5B000B78A6 /* MainStoryboard_iPhone.storyboard */,
+				3A959E4B1722FA5B000B78A6 /* MainStoryboard_iPad.storyboard */,
+				3A959E4E1722FA5B000B78A6 /* WLFirstViewController.h */,
+				3A959E4F1722FA5B000B78A6 /* WLFirstViewController.m */,
+				3A959E511722FA5B000B78A6 /* first.png */,
+				3A959E531722FA5B000B78A6 /* first@2x.png */,
+				3A959E551722FA5B000B78A6 /* WLSecondViewController.h */,
+				3A959E561722FA5B000B78A6 /* WLSecondViewController.m */,
+				3A959E581722FA5B000B78A6 /* second.png */,
+				3A959E5A1722FA5B000B78A6 /* second@2x.png */,
+				3A959E371722FA5B000B78A6 /* Supporting Files */,
+			);
+			path = WaterLapseiOS;
+			sourceTree = "<group>";
+		};
+		3A959E371722FA5B000B78A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A959E381722FA5B000B78A6 /* WaterLapseiOS-Info.plist */,
+				3A959E391722FA5B000B78A6 /* InfoPlist.strings */,
+				3A959E3C1722FA5B000B78A6 /* main.m */,
+				3A959E3E1722FA5B000B78A6 /* WaterLapseiOS-Prefix.pch */,
+				3A959E421722FA5B000B78A6 /* Default.png */,
+				3A959E441722FA5B000B78A6 /* Default@2x.png */,
+				3A959E461722FA5B000B78A6 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A959E681722FA5B000B78A6 /* WaterLapseiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A959E6E1722FA5B000B78A6 /* WaterLapseiOSTests.h */,
+				3A959E6F1722FA5B000B78A6 /* WaterLapseiOSTests.m */,
+				3A959E691722FA5B000B78A6 /* Supporting Files */,
+			);
+			path = WaterLapseiOSTests;
+			sourceTree = "<group>";
+		};
+		3A959E691722FA5B000B78A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A959E6A1722FA5B000B78A6 /* WaterLapseiOSTests-Info.plist */,
+				3A959E6B1722FA5B000B78A6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A959E2C1722FA5B000B78A6 /* WaterLapseiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A959E731722FA5B000B78A6 /* Build configuration list for PBXNativeTarget "WaterLapseiOS" */;
+			buildPhases = (
+				3A959E291722FA5B000B78A6 /* Sources */,
+				3A959E2A1722FA5B000B78A6 /* Frameworks */,
+				3A959E2B1722FA5B000B78A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaterLapseiOS;
+			productName = WaterLapseiOS;
+			productReference = 3A959E2D1722FA5B000B78A6 /* WaterLapseiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A959E601722FA5B000B78A6 /* WaterLapseiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A959E761722FA5B000B78A6 /* Build configuration list for PBXNativeTarget "WaterLapseiOSTests" */;
+			buildPhases = (
+				3A959E5C1722FA5B000B78A6 /* Sources */,
+				3A959E5D1722FA5B000B78A6 /* Frameworks */,
+				3A959E5E1722FA5B000B78A6 /* Resources */,
+				3A959E5F1722FA5B000B78A6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A959E671722FA5B000B78A6 /* PBXTargetDependency */,
+			);
+			name = WaterLapseiOSTests;
+			productName = WaterLapseiOSTests;
+			productReference = 3A959E611722FA5B000B78A6 /* WaterLapseiOSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A959E251722FA5B000B78A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WL;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "International Space Apps";
+			};
+			buildConfigurationList = 3A959E281722FA5B000B78A6 /* Build configuration list for PBXProject "WaterLapseiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3A959E241722FA5B000B78A6;
+			productRefGroup = 3A959E2E1722FA5B000B78A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A959E2C1722FA5B000B78A6 /* WaterLapseiOS */,
+				3A959E601722FA5B000B78A6 /* WaterLapseiOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A959E2B1722FA5B000B78A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A959E3B1722FA5B000B78A6 /* InfoPlist.strings in Resources */,
+				3A959E431722FA5B000B78A6 /* Default.png in Resources */,
+				3A959E451722FA5B000B78A6 /* Default@2x.png in Resources */,
+				3A959E471722FA5B000B78A6 /* Default-568h@2x.png in Resources */,
+				3A959E4A1722FA5B000B78A6 /* MainStoryboard_iPhone.storyboard in Resources */,
+				3A959E4D1722FA5B000B78A6 /* MainStoryboard_iPad.storyboard in Resources */,
+				3A959E521722FA5B000B78A6 /* first.png in Resources */,
+				3A959E541722FA5B000B78A6 /* first@2x.png in Resources */,
+				3A959E591722FA5B000B78A6 /* second.png in Resources */,
+				3A959E5B1722FA5B000B78A6 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A959E5E1722FA5B000B78A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A959E6D1722FA5B000B78A6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A959E5F1722FA5B000B78A6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A959E291722FA5B000B78A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A959E3D1722FA5B000B78A6 /* main.m in Sources */,
+				3A959E411722FA5B000B78A6 /* WLAppDelegate.m in Sources */,
+				3A959E501722FA5B000B78A6 /* WLFirstViewController.m in Sources */,
+				3A959E571722FA5B000B78A6 /* WLSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A959E5C1722FA5B000B78A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A959E701722FA5B000B78A6 /* WaterLapseiOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A959E671722FA5B000B78A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A959E2C1722FA5B000B78A6 /* WaterLapseiOS */;
+			targetProxy = 3A959E661722FA5B000B78A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A959E391722FA5B000B78A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A959E3A1722FA5B000B78A6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3A959E481722FA5B000B78A6 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A959E491722FA5B000B78A6 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		3A959E4B1722FA5B000B78A6 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A959E4C1722FA5B000B78A6 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		3A959E6B1722FA5B000B78A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A959E6C1722FA5B000B78A6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A959E711722FA5B000B78A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A959E721722FA5B000B78A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A959E741722FA5B000B78A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaterLapseiOS/WaterLapseiOS-Prefix.pch";
+				INFOPLIST_FILE = "WaterLapseiOS/WaterLapseiOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3A959E751722FA5B000B78A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaterLapseiOS/WaterLapseiOS-Prefix.pch";
+				INFOPLIST_FILE = "WaterLapseiOS/WaterLapseiOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3A959E771722FA5B000B78A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WaterLapseiOS.app/WaterLapseiOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaterLapseiOS/WaterLapseiOS-Prefix.pch";
+				INFOPLIST_FILE = "WaterLapseiOSTests/WaterLapseiOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3A959E781722FA5B000B78A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WaterLapseiOS.app/WaterLapseiOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaterLapseiOS/WaterLapseiOS-Prefix.pch";
+				INFOPLIST_FILE = "WaterLapseiOSTests/WaterLapseiOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A959E281722FA5B000B78A6 /* Build configuration list for PBXProject "WaterLapseiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A959E711722FA5B000B78A6 /* Debug */,
+				3A959E721722FA5B000B78A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A959E731722FA5B000B78A6 /* Build configuration list for PBXNativeTarget "WaterLapseiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A959E741722FA5B000B78A6 /* Debug */,
+				3A959E751722FA5B000B78A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A959E761722FA5B000B78A6 /* Build configuration list for PBXNativeTarget "WaterLapseiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A959E771722FA5B000B78A6 /* Debug */,
+				3A959E781722FA5B000B78A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A959E251722FA5B000B78A6 /* Project object */;
+}
