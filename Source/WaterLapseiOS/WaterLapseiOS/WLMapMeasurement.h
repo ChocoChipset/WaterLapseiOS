@@ -11,6 +11,6 @@
 
 @interface WLMapMeasurement : NSObject <MKOverlay>
 
-
+@property (nonatomic, unsafe_unretained) CLLocationCoordinate2D coordinate;
 
 @end
