@@ -11,6 +11,8 @@
 		3A462812172426F70027959A /* WLMapMeasurement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A462810172426F70027959A /* WLMapMeasurement.m */; };
 		3A462816172427520027959A /* WLMeasurementOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A462815172427520027959A /* WLMeasurementOverlay.m */; };
 		3A462817172427520027959A /* WLMeasurementOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A462815172427520027959A /* WLMeasurementOverlay.m */; };
+		3A462819172427940027959A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A462818172427940027959A /* CoreLocation.framework */; };
+		3A46281B172427AA0027959A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A46281A172427AA0027959A /* MapKit.framework */; };
 		3A959E311722FA5B000B78A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A959E301722FA5B000B78A6 /* UIKit.framework */; };
 		3A959E331722FA5B000B78A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A959E321722FA5B000B78A6 /* Foundation.framework */; };
 		3A959E351722FA5B000B78A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A959E341722FA5B000B78A6 /* CoreGraphics.framework */; };
@@ -52,6 +54,8 @@
 		3A462810172426F70027959A /* WLMapMeasurement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMapMeasurement.m; sourceTree = "<group>"; };
 		3A462814172427520027959A /* WLMeasurementOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMeasurementOverlay.h; sourceTree = "<group>"; };
 		3A462815172427520027959A /* WLMeasurementOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMeasurementOverlay.m; sourceTree = "<group>"; };
+		3A462818172427940027959A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3A46281A172427AA0027959A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3A959E2D1722FA5B000B78A6 /* WaterLapseiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterLapseiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A959E301722FA5B000B78A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3A959E321722FA5B000B78A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -91,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A46281B172427AA0027959A /* MapKit.framework in Frameworks */,
+				3A462819172427940027959A /* CoreLocation.framework in Frameworks */,
 				3A959E311722FA5B000B78A6 /* UIKit.framework in Frameworks */,
 				3A959E331722FA5B000B78A6 /* Foundation.framework in Frameworks */,
 				3A959E351722FA5B000B78A6 /* CoreGraphics.framework in Frameworks */,
@@ -143,6 +149,8 @@
 		3A959E2F1722FA5B000B78A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A46281A172427AA0027959A /* MapKit.framework */,
+				3A462818172427940027959A /* CoreLocation.framework */,
 				3A959E301722FA5B000B78A6 /* UIKit.framework */,
 				3A959E321722FA5B000B78A6 /* Foundation.framework */,
 				3A959E341722FA5B000B78A6 /* CoreGraphics.framework */,
