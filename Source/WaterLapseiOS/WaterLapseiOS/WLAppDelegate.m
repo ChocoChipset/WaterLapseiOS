@@ -7,15 +7,28 @@
 //
 
 #import "WLAppDelegate.h"
+#import "WLMVPFactory.h"
+#import "Settings.h"
 
 @implementation WLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self runMVPApp];
+    
     // Override point for customization after application launch.
     return YES;
 }
-							
+
+- (void)runMVPApp {
+    
+#ifdef RUN_MVP_APP
+    WLMVPFactory *mvpFactory = [[WLMVPFactory alloc] init];
+    [mvpFactory spawnMVPApp];
+#endif
+    
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
