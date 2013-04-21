@@ -12,5 +12,7 @@
 
 #define RUN_MVP_APP // show only simple mapview
 
+#define RUN_NETCDF
+
 
 #endif
