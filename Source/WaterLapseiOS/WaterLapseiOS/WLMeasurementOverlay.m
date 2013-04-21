@@ -7,19 +7,46 @@
 //
 
 #import "WLMeasurementOverlay.h"
+#import "WLMapMeasurement.h"
+
 
 @implementation WLMeasurementOverlay
 
+/*--------------------------------------------------------*/
+
+-(UIColor *)color
+{
+    WLMapMeasurement *mapMeasurement = (WLMapMeasurement *)self.overlay;
+    
+    UIColor *result;
+    
+    if (mapMeasurement.measurement > 0.0)
+    {
+        result = [UIColor orangeColor];
+    }
+    else if (mapMeasurement.measurement < 0.0)
+    {
+        result = [UIColor redColor];
+    }
+    else
+    {
+        result = [UIColor blueColor];
+    }
+    
+    return result;
+}
+
+/*--------------------------------------------------------*/
 
 -(void)drawMapRect:(MKMapRect)mapRect zoomScale:(MKZoomScale)zoomScale inContext:(CGContextRef)context
 {
-    CGRect theRect = [self rectForMapRect:mapRect];
-  
-    UIColor *measurementColor = [UIColor redColor];
+    CGRect theRect = [self rectForMapRect:[self.overlay boundingMapRect]];
     
-    CGContextSetFillColorWithColor(context, measurementColor.CGColor);
+    CGContextSetFillColorWithColor(context, self.color.CGColor);
     
     CGContextFillRect(context, theRect);
 }
+
+/*--------------------------------------------------------*/
 
 @end

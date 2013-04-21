@@ -10,4 +10,6 @@
 
 @interface WLMeasurementOverlay : MKOverlayView
 
+-(UIColor *)color;
+
 @end
