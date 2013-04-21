@@ -9,8 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
+extern const CLLocationCoordinate2D kExampleOverlayCoordinate;
+
 @interface WLMapMeasurement : NSObject <MKOverlay>
 
 @property (nonatomic, unsafe_unretained) CLLocationCoordinate2D coordinate;
+@property (nonatomic, unsafe_unretained) CGFloat measurement;
+
+-(id)initWithCoordinate:(CLLocationCoordinate2D)paramCoordinate withMeasurementValue:(CGFloat)paramValue;
+
 
 @end

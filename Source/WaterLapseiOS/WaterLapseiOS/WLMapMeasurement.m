@@ -8,13 +8,15 @@
 
 #import "WLMapMeasurement.h"
 
-/*--------------------------------------------------------*/
-
-#pragma Local Constants
 
 /*--------------------------------------------------------*/
 
-const CGFloat kMeasurementBoundMapRectWidthInterval = 0.00112;
+#pragma mark - Local Constants
+
+/*--------------------------------------------------------*/
+
+const CGFloat kMeasurementBoundMapRectWidthInterval = 0.00237;
+const CLLocationCoordinate2D kExampleOverlayCoordinate = {48.85883, 2.2945};
 
 /*--------------------------------------------------------*/
 
@@ -24,45 +26,46 @@ const CGFloat kMeasurementBoundMapRectWidthInterval = 0.00112;
 
 /*--------------------------------------------------------*/
 
-#pragma mark MKOverlay delegate
+#pragma mark - MKOverlay delegate
 
 /*--------------------------------------------------------*/
 
-
-#warning Temporal implementation for testing purposes
-
--(CLLocationCoordinate2D)coordinate
+-(id)initWithCoordinate:(CLLocationCoordinate2D)paramCoordinate withMeasurementValue:(CGFloat)paramValue
 {
-    return CLLocationCoordinate2DMake(48.85883, 2.2945);
+    self = [super init];
+    
+    if (self)
+    {
+        _coordinate = paramCoordinate;
+        _measurement = paramValue;
+    }
+    
+    return self;
 }
+
+/*--------------------------------------------------------*/
+
+#pragma mark - MKOverlay delegate
 
 /*--------------------------------------------------------*/
 
 -(MKMapRect)boundingMapRect
 {
-    MKMapPoint upperLeftCorner   = MKMapPointForCoordinate(CLLocationCoordinate2DMake(self.coordinate.latitude - kMeasurementBoundMapRectWidthInterval,
+    
+    MKMapPoint upperLeftCorner   = MKMapPointForCoordinate(CLLocationCoordinate2DMake(self.coordinate.latitude,
+                                                                                self.coordinate.longitude));
+    MKMapPoint lowerRightCorner  = MKMapPointForCoordinate(CLLocationCoordinate2DMake(self.coordinate.latitude - kMeasurementBoundMapRectWidthInterval,
                                                                                 self.coordinate.longitude + kMeasurementBoundMapRectWidthInterval));
-    MKMapPoint upperRightCorner  = MKMapPointForCoordinate(CLLocationCoordinate2DMake(self.coordinate.latitude + kMeasurementBoundMapRectWidthInterval,
-                                                                                self.coordinate.longitude + kMeasurementBoundMapRectWidthInterval));
-    MKMapPoint bottomLeftCorner  = MKMapPointForCoordinate(CLLocationCoordinate2DMake(self.coordinate.latitude - kMeasurementBoundMapRectWidthInterval,
-                                                                                self.coordinate.longitude + kMeasurementBoundMapRectWidthInterval));
+
+    CGFloat width = fabs(lowerRightCorner.x - upperLeftCorner.x);
+    CGFloat height = fabs(lowerRightCorner.y - upperLeftCorner.y);
+    
     
     MKMapRect result =  MKMapRectMake(upperLeftCorner.x,
                                      upperLeftCorner.y,
-                                     fabs(upperLeftCorner.x - upperRightCorner.x),
-                                     fabs(upperLeftCorner.y - bottomLeftCorner.y));
-
+                                     width,
+                                     height);
     return result;
 }
-
-/*--------------------------------------------------------*/
-
--(BOOL)intersectsMapRect:(MKMapRect)mapRect
-{
-    
-}
-
-/*--------------------------------------------------------*/
-
 
 @end
