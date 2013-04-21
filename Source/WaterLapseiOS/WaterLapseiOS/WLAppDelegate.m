@@ -8,6 +8,7 @@
 
 #import "WLAppDelegate.h"
 #import "WLMVPFactory.h"
+#import "WLMoistureDataSource.h"
 #import "Settings.h"
 
 @implementation WLAppDelegate
@@ -15,6 +16,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self runMVPApp];
+    [self parseNetCDF];
     
     // Override point for customization after application launch.
     return YES;
@@ -25,6 +27,15 @@
 #ifdef RUN_MVP_APP
     WLMVPFactory *mvpFactory = [[WLMVPFactory alloc] init];
     [mvpFactory spawnMVPApp];
+#endif
+    
+}
+
+- (void)parseNetCDF {
+    
+#ifdef RUN_NETCDF
+    WLMoistureDataSource *dataSource = [[WLMoistureDataSource alloc] init];
+    [dataSource parseData];
 #endif
     
 }

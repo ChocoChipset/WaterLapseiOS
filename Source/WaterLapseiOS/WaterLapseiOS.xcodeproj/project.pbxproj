@@ -37,6 +37,7 @@
 		3A959E701722FA5B000B78A6 /* WaterLapseiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A959E6F1722FA5B000B78A6 /* WaterLapseiOSTests.m */; };
 		B1340D441723E66200D1A91F /* WLMVPFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B1340D431723E66200D1A91F /* WLMVPFactory.m */; };
 		B1340D451723E66200D1A91F /* WLMVPFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B1340D431723E66200D1A91F /* WLMVPFactory.m */; };
+		B1C4FA7117242AB80001ECAF /* WLMoistureDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1C4FA7017242AB80001ECAF /* WLMoistureDataSource.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		B1340D421723E66100D1A91F /* WLMVPFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMVPFactory.h; sourceTree = "<group>"; };
 		B1340D431723E66200D1A91F /* WLMVPFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMVPFactory.m; sourceTree = "<group>"; };
 		B1340D491723E69700D1A91F /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		B1C4FA6F17242AB80001ECAF /* WLMoistureDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMoistureDataSource.h; sourceTree = "<group>"; };
+		B1C4FA7017242AB80001ECAF /* WLMoistureDataSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLMoistureDataSource.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +221,7 @@
 		B1340D481723E68B00D1A91F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B1C4FA6D17242AAB0001ECAF /* DataSource */,
 				3A462813172426FC0027959A /* MapOverlay */,
 				B1340D491723E69700D1A91F /* Settings.h */,
 				3A959E3F1722FA5B000B78A6 /* WLAppDelegate.h */,
@@ -238,6 +242,15 @@
 				B1340D431723E66200D1A91F /* WLMVPFactory.m */,
 			);
 			name = MVP;
+			sourceTree = "<group>";
+		};
+		B1C4FA6D17242AAB0001ECAF /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				B1C4FA6F17242AB80001ECAF /* WLMoistureDataSource.h */,
+				B1C4FA7017242AB80001ECAF /* WLMoistureDataSource.mm */,
+			);
+			name = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +376,7 @@
 				B1340D441723E66200D1A91F /* WLMVPFactory.m in Sources */,
 				3A462811172426F70027959A /* WLMapMeasurement.m in Sources */,
 				3A462816172427520027959A /* WLMeasurementOverlay.m in Sources */,
+				B1C4FA7117242AB80001ECAF /* WLMoistureDataSource.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
