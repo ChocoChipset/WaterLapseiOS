@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A462811172426F70027959A /* WLMapMeasurement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A462810172426F70027959A /* WLMapMeasurement.m */; };
+		3A462812172426F70027959A /* WLMapMeasurement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A462810172426F70027959A /* WLMapMeasurement.m */; };
 		3A959E311722FA5B000B78A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A959E301722FA5B000B78A6 /* UIKit.framework */; };
 		3A959E331722FA5B000B78A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A959E321722FA5B000B78A6 /* Foundation.framework */; };
 		3A959E351722FA5B000B78A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A959E341722FA5B000B78A6 /* CoreGraphics.framework */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A46280F172426F70027959A /* WLMapMeasurement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMapMeasurement.h; sourceTree = "<group>"; };
+		3A462810172426F70027959A /* WLMapMeasurement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMapMeasurement.m; sourceTree = "<group>"; };
 		3A959E2D1722FA5B000B78A6 /* WaterLapseiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterLapseiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A959E301722FA5B000B78A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3A959E321722FA5B000B78A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -102,6 +106,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A462813172426FC0027959A /* MapOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				3A46280F172426F70027959A /* WLMapMeasurement.h */,
+				3A462810172426F70027959A /* WLMapMeasurement.m */,
+			);
+			name = MapOverlay;
+			sourceTree = "<group>";
+		};
 		3A959E241722FA5B000B78A6 = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +204,7 @@
 		B1340D481723E68B00D1A91F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3A462813172426FC0027959A /* MapOverlay */,
 				B1340D491723E69700D1A91F /* Settings.h */,
 				3A959E3F1722FA5B000B78A6 /* WLAppDelegate.h */,
 				3A959E401722FA5B000B78A6 /* WLAppDelegate.m */,
@@ -333,6 +347,7 @@
 				3A959E501722FA5B000B78A6 /* WLFirstViewController.m in Sources */,
 				3A959E571722FA5B000B78A6 /* WLSecondViewController.m in Sources */,
 				B1340D441723E66200D1A91F /* WLMVPFactory.m in Sources */,
+				3A462811172426F70027959A /* WLMapMeasurement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +357,7 @@
 			files = (
 				3A959E701722FA5B000B78A6 /* WaterLapseiOSTests.m in Sources */,
 				B1340D451723E66200D1A91F /* WLMVPFactory.m in Sources */,
+				3A462812172426F70027959A /* WLMapMeasurement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
