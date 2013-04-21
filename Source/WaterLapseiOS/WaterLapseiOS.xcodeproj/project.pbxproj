@@ -29,6 +29,8 @@
 		3A959E651722FA5B000B78A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A959E321722FA5B000B78A6 /* Foundation.framework */; };
 		3A959E6D1722FA5B000B78A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A959E6B1722FA5B000B78A6 /* InfoPlist.strings */; };
 		3A959E701722FA5B000B78A6 /* WaterLapseiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A959E6F1722FA5B000B78A6 /* WaterLapseiOSTests.m */; };
+		B1340D441723E66200D1A91F /* WLMVPFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B1340D431723E66200D1A91F /* WLMVPFactory.m */; };
+		B1340D451723E66200D1A91F /* WLMVPFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B1340D431723E66200D1A91F /* WLMVPFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,9 @@
 		3A959E6C1722FA5B000B78A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3A959E6E1722FA5B000B78A6 /* WaterLapseiOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterLapseiOSTests.h; sourceTree = "<group>"; };
 		3A959E6F1722FA5B000B78A6 /* WaterLapseiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterLapseiOSTests.m; sourceTree = "<group>"; };
+		B1340D421723E66100D1A91F /* WLMVPFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMVPFactory.h; sourceTree = "<group>"; };
+		B1340D431723E66200D1A91F /* WLMVPFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMVPFactory.m; sourceTree = "<group>"; };
+		B1340D491723E69700D1A91F /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,18 +135,10 @@
 		3A959E361722FA5B000B78A6 /* WaterLapseiOS */ = {
 			isa = PBXGroup;
 			children = (
-				3A959E3F1722FA5B000B78A6 /* WLAppDelegate.h */,
-				3A959E401722FA5B000B78A6 /* WLAppDelegate.m */,
+				B1340D481723E68B00D1A91F /* Classes */,
 				3A959E481722FA5B000B78A6 /* MainStoryboard_iPhone.storyboard */,
 				3A959E4B1722FA5B000B78A6 /* MainStoryboard_iPad.storyboard */,
-				3A959E4E1722FA5B000B78A6 /* WLFirstViewController.h */,
-				3A959E4F1722FA5B000B78A6 /* WLFirstViewController.m */,
-				3A959E511722FA5B000B78A6 /* first.png */,
-				3A959E531722FA5B000B78A6 /* first@2x.png */,
-				3A959E551722FA5B000B78A6 /* WLSecondViewController.h */,
-				3A959E561722FA5B000B78A6 /* WLSecondViewController.m */,
-				3A959E581722FA5B000B78A6 /* second.png */,
-				3A959E5A1722FA5B000B78A6 /* second@2x.png */,
+				B1340D471723E67400D1A91F /* Resources */,
 				3A959E371722FA5B000B78A6 /* Supporting Files */,
 			);
 			path = WaterLapseiOS;
@@ -178,6 +175,41 @@
 				3A959E6B1722FA5B000B78A6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1340D471723E67400D1A91F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A959E511722FA5B000B78A6 /* first.png */,
+				3A959E531722FA5B000B78A6 /* first@2x.png */,
+				3A959E581722FA5B000B78A6 /* second.png */,
+				3A959E5A1722FA5B000B78A6 /* second@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B1340D481723E68B00D1A91F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B1340D491723E69700D1A91F /* Settings.h */,
+				3A959E3F1722FA5B000B78A6 /* WLAppDelegate.h */,
+				3A959E401722FA5B000B78A6 /* WLAppDelegate.m */,
+				3A959E4E1722FA5B000B78A6 /* WLFirstViewController.h */,
+				3A959E4F1722FA5B000B78A6 /* WLFirstViewController.m */,
+				3A959E551722FA5B000B78A6 /* WLSecondViewController.h */,
+				3A959E561722FA5B000B78A6 /* WLSecondViewController.m */,
+				B1340D4A1723E76A00D1A91F /* MVP */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		B1340D4A1723E76A00D1A91F /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				B1340D421723E66100D1A91F /* WLMVPFactory.h */,
+				B1340D431723E66200D1A91F /* WLMVPFactory.m */,
+			);
+			name = MVP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +332,7 @@
 				3A959E411722FA5B000B78A6 /* WLAppDelegate.m in Sources */,
 				3A959E501722FA5B000B78A6 /* WLFirstViewController.m in Sources */,
 				3A959E571722FA5B000B78A6 /* WLSecondViewController.m in Sources */,
+				B1340D441723E66200D1A91F /* WLMVPFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A959E701722FA5B000B78A6 /* WaterLapseiOSTests.m in Sources */,
+				B1340D451723E66200D1A91F /* WLMVPFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +524,7 @@
 				3A959E751722FA5B000B78A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A959E761722FA5B000B78A6 /* Build configuration list for PBXNativeTarget "WaterLapseiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +533,7 @@
 				3A959E781722FA5B000B78A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
