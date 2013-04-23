@@ -35,6 +35,8 @@
 		3A959E651722FA5B000B78A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A959E321722FA5B000B78A6 /* Foundation.framework */; };
 		3A959E6D1722FA5B000B78A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A959E6B1722FA5B000B78A6 /* InfoPlist.strings */; };
 		3A959E701722FA5B000B78A6 /* WaterLapseiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A959E6F1722FA5B000B78A6 /* WaterLapseiOSTests.m */; };
+		3AF6EE95172731260094B016 /* TestData1TextFormat.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3AF6EE94172731260094B016 /* TestData1TextFormat.txt */; };
+		3AF6EE96172731260094B016 /* TestData1TextFormat.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3AF6EE94172731260094B016 /* TestData1TextFormat.txt */; };
 		B1340D441723E66200D1A91F /* WLMVPFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B1340D431723E66200D1A91F /* WLMVPFactory.m */; };
 		B1340D451723E66200D1A91F /* WLMVPFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B1340D431723E66200D1A91F /* WLMVPFactory.m */; };
 		B1C4FA7117242AB80001ECAF /* WLMoistureDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1C4FA7017242AB80001ECAF /* WLMoistureDataSource.mm */; };
@@ -86,6 +88,7 @@
 		3A959E6C1722FA5B000B78A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3A959E6E1722FA5B000B78A6 /* WaterLapseiOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterLapseiOSTests.h; sourceTree = "<group>"; };
 		3A959E6F1722FA5B000B78A6 /* WaterLapseiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterLapseiOSTests.m; sourceTree = "<group>"; };
+		3AF6EE94172731260094B016 /* TestData1TextFormat.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TestData1TextFormat.txt; path = ../../../Data/TestData/TestData1TextFormat.txt; sourceTree = "<group>"; };
 		B1340D421723E66100D1A91F /* WLMVPFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMVPFactory.h; sourceTree = "<group>"; };
 		B1340D431723E66200D1A91F /* WLMVPFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMVPFactory.m; sourceTree = "<group>"; };
 		B1340D491723E69700D1A91F /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
@@ -177,6 +180,7 @@
 		3A959E371722FA5B000B78A6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3AF6EE94172731260094B016 /* TestData1TextFormat.txt */,
 				3A959E381722FA5B000B78A6 /* WaterLapseiOS-Info.plist */,
 				3A959E391722FA5B000B78A6 /* InfoPlist.strings */,
 				3A959E3C1722FA5B000B78A6 /* main.m */,
@@ -335,6 +339,7 @@
 				3A959E541722FA5B000B78A6 /* first@2x.png in Resources */,
 				3A959E591722FA5B000B78A6 /* second.png in Resources */,
 				3A959E5B1722FA5B000B78A6 /* second@2x.png in Resources */,
+				3AF6EE95172731260094B016 /* TestData1TextFormat.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A959E6D1722FA5B000B78A6 /* InfoPlist.strings in Resources */,
+				3AF6EE96172731260094B016 /* TestData1TextFormat.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
