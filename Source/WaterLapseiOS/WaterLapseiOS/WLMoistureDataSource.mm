@@ -40,8 +40,13 @@ static std::ifstream file;
     file.getline(buffer, 100);
     printf(buffer);
 
-    while (file.good()) {
+    int i= 0;
+    int cap = 55000;
+    BOOL capData = YES;
+    
+    while (file.good() && i < cap && capData == YES) {
         [self readValues];
+        i++;
     }
     
     file.close();
@@ -60,17 +65,18 @@ static std::ifstream file;
     float time, latitude, longitude, moisture;
     file >> time >> latitude >> longitude >> moisture;
     
-    DataChunk *dataChunk = [[DataChunk alloc] init];
-    dataChunk.time = time;
-    dataChunk.latitude  = latitude;
-    dataChunk.longitude = longitude;
-    dataChunk.moisture = moisture;
-    
-    file >> time >> latitude >> longitude >> moisture;
-    
-    [self.data addObject:dataChunk];
+    if (!isnan(moisture)) {
+        
+        DataChunk *dataChunk = [[DataChunk alloc] init];
+        dataChunk.time = time;
+        dataChunk.latitude  = latitude;
+        dataChunk.longitude = longitude;
+        dataChunk.moisture = moisture;
+        
+        [self.data addObject:dataChunk];
     
 //    std::cout << "buffer (values): " << "; time:" << time << "; lat: " << latitude << "; lon: " << longitude << "; moist: " << moisture << std::endl;
+    }
 }
 
 - (NSString *)testDataPath {

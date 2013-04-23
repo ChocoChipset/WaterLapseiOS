@@ -15,7 +15,7 @@
 
 /*--------------------------------------------------------*/
 
-const CGFloat kMeasurementBoundMapRectWidthInterval = 0.00237;
+const CGFloat kMeasurementBoundMapRectWidthInterval = 1.00237;
 const CLLocationCoordinate2D kExampleOverlayCoordinate = {48.85883, 2.2945};
 
 /*--------------------------------------------------------*/

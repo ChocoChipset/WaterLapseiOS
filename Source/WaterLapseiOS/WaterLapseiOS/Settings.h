@@ -10,9 +10,8 @@
 #define WaterLapseiOS_Settings_h
 
 
-#define RUN_MVP_APP // show only simple mapview
+// #define RUN_MVP_APP // show only simple mapview
 
 #define RUN_NETCDF
-
 
 #endif
