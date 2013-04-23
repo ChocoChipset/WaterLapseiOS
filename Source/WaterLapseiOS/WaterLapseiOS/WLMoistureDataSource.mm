@@ -60,17 +60,18 @@ static std::ifstream file;
     float time, latitude, longitude, moisture;
     file >> time >> latitude >> longitude >> moisture;
     
-    DataChunk *dataChunk = [[DataChunk alloc] init];
-    dataChunk.time = time;
-    dataChunk.latitude  = latitude;
-    dataChunk.longitude = longitude;
-    dataChunk.moisture = moisture;
-    
-    file >> time >> latitude >> longitude >> moisture;
-    
-    [self.data addObject:dataChunk];
+    if (!isnan(moisture)) {
+        
+        DataChunk *dataChunk = [[DataChunk alloc] init];
+        dataChunk.time = time;
+        dataChunk.latitude  = latitude;
+        dataChunk.longitude = longitude;
+        dataChunk.moisture = moisture;
+        
+        [self.data addObject:dataChunk];
     
 //    std::cout << "buffer (values): " << "; time:" << time << "; lat: " << latitude << "; lon: " << longitude << "; moist: " << moisture << std::endl;
+    }
 }
 
 - (NSString *)testDataPath {
