@@ -8,20 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DataChunk : NSObject
 
-@property (nonatomic, assign) float time;
-@property (nonatomic, assign) float latitude;
-@property (nonatomic, assign) float longitude;
-@property (nonatomic, assign) float moisture;
-
-@end
+typedef void (^ MoistureChunkBlock)(float latitude, float longitude, float moisture);
 
 
 @interface WLMoistureDataSource : NSObject
 
-@property (nonatomic, strong) NSMutableArray *data;
-
-- (void)parseData;
+- (void)iterateDataWithBlock:(MoistureChunkBlock)iterationStepBlock;
 
 @end

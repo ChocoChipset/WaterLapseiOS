@@ -19,20 +19,21 @@
 
 static std::ifstream file;
 
-- (void)parseData {
+- (void)iterateDataWithBlock:(MoistureChunkBlock)iterationStepBlock {
+    [self parseDataIterateWithBlock:iterationStepBlock];
+}
+
+- (void)parseDataIterateWithBlock:(MoistureChunkBlock)iterationStepBlock {
     
     NSString *filename = [self testDataPath];
     
     NSString *string = [NSString stringWithContentsOfFile:filename encoding:NSUTF8StringEncoding error:nil];
     NSLog(@"%@", string);
     
-    [_data removeAllObjects];
-    _data = [NSMutableArray new];
-    
-    [self readContentsOfFile:filename];
+    [self readContentsOfFile:filename withBlock:iterationStepBlock];
 }
 
-- (void)readContentsOfFile:(NSString *)filename {
+- (void)readContentsOfFile:(NSString *)filename withBlock:(MoistureChunkBlock)iterationStepBlock {
 
     file.open(filename.cString);
 
@@ -45,7 +46,7 @@ static std::ifstream file;
     BOOL capData = YES;
     
     while (file.good() && i < cap && capData == YES) {
-        [self readValues];
+        [self readValuesWithBlock:iterationStepBlock];
         i++;
     }
     
@@ -56,26 +57,18 @@ static std::ifstream file;
     
     std::string buff;
     file >> buff;
-    
-//    std::cout << "buffer: " << buff << std::endl;
 }
 
-- (void)readValues {
+- (void)readValuesWithBlock:(MoistureChunkBlock)iterationStepBlock {
     
     float time, latitude, longitude, moisture;
     file >> time >> latitude >> longitude >> moisture;
     
     if (!isnan(moisture)) {
         
-        DataChunk *dataChunk = [[DataChunk alloc] init];
-        dataChunk.time = time;
-        dataChunk.latitude  = latitude;
-        dataChunk.longitude = longitude;
-        dataChunk.moisture = moisture;
-        
-        [self.data addObject:dataChunk];
-    
-//    std::cout << "buffer (values): " << "; time:" << time << "; lat: " << latitude << "; lon: " << longitude << "; moist: " << moisture << std::endl;
+        if (iterationStepBlock) {
+            (iterationStepBlock)(latitude, longitude, moisture);
+        }
     }
 }
 
