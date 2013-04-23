@@ -40,8 +40,13 @@ static std::ifstream file;
     file.getline(buffer, 100);
     printf(buffer);
 
-    while (file.good()) {
+    int i= 0;
+    int cap = 55000;
+    BOOL capData = YES;
+    
+    while (file.good() && i < cap && capData == YES) {
         [self readValues];
+        i++;
     }
     
     file.close();
